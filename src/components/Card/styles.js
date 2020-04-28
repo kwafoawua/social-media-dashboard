@@ -17,6 +17,15 @@ const StyledCard = styled.div`
   border-radius: 0 0 0.5rem 0.5rem;
   margin-top: 0.5rem;
   height: 22rem;
+  
+  &:hover {
+    background-color: ${props => props.theme.bg.hover};
+    cursor: pointer;
+  }
+  
+  @media(min-width: 1440px) {
+    width: 30rem;
+  }
 `;
 
 const StyledHeading = styled.div`
@@ -67,6 +76,15 @@ const StyledOverviewCard = styled.div`
   padding: 2rem 2rem 0;
   width: 28rem;
   margin-bottom: 3rem;
+  
+  &:hover {
+  background-color: ${props => props.theme.bg.hover};
+  cursor: pointer;
+  }
+  
+  @media(min-width: 1440px) {
+    width: 26rem;
+  }
   
   & > ${StyledHeading} {
     display: inline-flex;

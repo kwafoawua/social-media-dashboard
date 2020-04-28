@@ -6,7 +6,8 @@ const darkTheme = {
   bg: {
     primary: 'hsl(230, 17%, 14%)',
     secondary: 'hsl(232, 19%, 15%)',
-    card: 'hsl(228, 28%, 20%)'
+    card: 'hsl(228, 28%, 20%)',
+    hover: 'hsl(228, 26%, 27%)',
   },
 };
 
@@ -18,7 +19,8 @@ const lightTheme = {
   bg: {
     primary: 'hsl(0, 0%, 100%)',
     secondary: 'hsl(225, 100%, 98%)',
-    card: 'hsl(227, 47%, 96%)'
+    card: 'hsl(227, 47%, 96%)',
+    hover: 'hsl(232, 33%, 91%)',
   },
 };
 
