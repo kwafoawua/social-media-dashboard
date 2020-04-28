@@ -60,7 +60,7 @@ const StyledArrow = styled.img`
 `;
 
 const StyledStatus = styled.div`
-  color: ${props => props.color};
+  color: ${props => props.statusColor};
   display: inline-flex;
   align-items: center;
   padding-top: 2.5rem;

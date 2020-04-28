@@ -22,7 +22,7 @@ const TopCard = ({bg, iconSrc, iconAlt, username, followersQ, followersText, arr
           <StyledFollowerQuantity>{followersQ}</StyledFollowerQuantity>
           <StyledFollowersText>{followersText}</StyledFollowersText>
         </StyledFollowers>
-        <StyledStatus color={statusColor}>
+        <StyledStatus statusColor={statusColor}>
           <StyledArrow src={arrowSrc} alt={arrowAlt} />
           <span>{statusText}</span>
         </StyledStatus>

@@ -17,7 +17,7 @@ const TodayCard = ({title, iconSrc, iconAlt, followersQ, arrowSrc, arrowAlt, sta
       </StyledHeading>
       <StyledFollowers>
         <StyledFollowerQuantity>{followersQ}</StyledFollowerQuantity>
-        <StyledStatus color={statusColor}>
+        <StyledStatus statusColor={statusColor}>
           <StyledArrow src={arrowSrc} alt={arrowAlt} />
           <span>{statusText}</span>
         </StyledStatus>
