@@ -1,4 +1,5 @@
 import styled from '@emotion/styled/macro';
+import { colors } from '../colors'
 
 const Divider = styled.hr`
   border-color: ${props => props.theme.text.primary};
@@ -21,6 +22,8 @@ const HeaderContainer = styled.header`
   @media(min-width: 1440px) {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 8em;
+    padding-right: 12rem;
   }
 `;
 
@@ -43,7 +46,7 @@ const ModeSwitcher = styled.div`
 `;
 
 const Slider = styled.span`
-  background: linear-gradient(45deg, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  background: ${colors.linearToggle};
   border-radius: 2rem;
   cursor: pointer;
   position: absolute;
@@ -79,18 +82,17 @@ const Checkbox = styled.input`
   opacity: 0;
   height: 0;
   width: 0;
-  
-  &:focus + ${Slider} {
-    box-shadow: 0 0 1px #2196F3;
-  }
 
   &:checked + ${Slider} {
-    background: hsl(230, 22%, 74%);
+    background: ${colors.toggle};
+    &:hover {
+      background: ${colors.linearToggle};
+    }
     &:before {
       -webkit-transform: translateX(2rem);
       -ms-transform: translateX(2rem);
       transform: translateX(2rem);
-      background-color: ${props => props.theme.text.secondary};
+      background-color: ${props => props.theme.bg.secondary};
     }
   }
 `;

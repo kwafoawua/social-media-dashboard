@@ -6,4 +6,5 @@ export const colors = {
   instagram: 'linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
   youtube: 'hsl(348, 97%, 39%)',
   linearToggle: 'linear-gradient(45deg, hsl(210, 78%, 56%),hsl(146, 68%, 55%))',
+  toggle: 'hsl(230, 22%, 74%)',
 }

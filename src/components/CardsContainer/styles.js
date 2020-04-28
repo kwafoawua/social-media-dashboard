@@ -13,6 +13,7 @@ const StyledCardsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: end;
+    top: -10rem;
   }
 `;
 
@@ -21,6 +22,10 @@ const StyledWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    
+    @media(min-width: 1440px) {
+      padding: 0 10rem;
+    }
 `;
 
 const StyledTitle = styled.h1`
@@ -28,6 +33,10 @@ const StyledTitle = styled.h1`
   align-self: start;
   padding-left: 2rem;
   color: ${props => props.theme.text.secondary};
+  
+  @media(min-width: 1440px) {
+    padding-left: 12rem;
+  }
 `;
 
 export { StyledCardsContainer, StyledTitle, StyledWrapper };
