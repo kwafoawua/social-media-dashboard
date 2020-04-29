@@ -12,7 +12,6 @@ import {
 } from './styles';
 
 const Header = (props) => {
-  console.log(props);
   return (
     <HeaderContainer>
       <DashboardInfo>
