@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   StyledArrow,
   StyledCardContainer,
@@ -6,11 +5,23 @@ import {
   StyledFollowers,
   StyledFollowersText,
   StyledHeading,
-  StyledIcon, StyledStatus,
+  StyledIcon,
+  StyledStatus,
   StyledCard,
 } from './styles';
 
-const TopCard = ({bg, iconSrc, iconAlt, username, followersQ, followersText, arrowSrc, arrowAlt, statusText, statusColor}) => {
+const TopCard = ({
+  bg,
+  iconSrc,
+  iconAlt,
+  username,
+  followersQ,
+  followersText,
+  arrowSrc,
+  arrowAlt,
+  statusText,
+  statusColor,
+}) => {
   return (
     <StyledCardContainer background={bg}>
       <StyledCard>

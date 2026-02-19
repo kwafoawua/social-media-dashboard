@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { ThemeProvider } from 'emotion-theming';
+import { useState } from 'react';
+import { ThemeProvider } from '@emotion/react';
 import Header from './Header/Header';
 import { GlobalStyles } from './GlobalStyles';
 import { globalCss } from './styles';
-import {darkTheme, lightTheme} from './themes';
+import { darkTheme, lightTheme } from './themes';
 import CardsContainer from './CardsContainer/CardsContainer';
-import {data} from '../data';
+import { data } from '../data';
 import Footer from './Footer/Footer';
 
 const App = () => {
   const [theme, setTheme] = useState(darkTheme);
 
-  const changeTheme = e => e.target.checked ? setTheme(lightTheme) : setTheme(darkTheme);
+  const changeTheme = (e) => (e.target.checked ? setTheme(lightTheme) : setTheme(darkTheme));
 
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyles styles={globalCss}/>
-      <Header onChange={changeTheme}/>
-      <CardsContainer topContent={data.topContent} overViewContent={data.overviewContent}/>
-      <Footer/>
+      <GlobalStyles styles={globalCss} />
+      <Header onChange={changeTheme} />
+      <CardsContainer topContent={data.topContent} overViewContent={data.overviewContent} />
+      <Footer />
     </ThemeProvider>
   );
 };

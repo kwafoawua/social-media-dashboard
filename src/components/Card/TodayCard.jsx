@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   StyledArrow,
   StyledFollowerQuantity,
@@ -9,11 +8,21 @@ import {
   StyledStatus,
 } from './styles';
 
-const TodayCard = ({title, iconSrc, iconAlt, followersQ, arrowSrc, arrowAlt, statusText, statusColor}) => {
-  return(
+const TodayCard = ({
+  title,
+  iconSrc,
+  iconAlt,
+  followersQ,
+  arrowSrc,
+  arrowAlt,
+  statusText,
+  statusColor,
+}) => {
+  return (
     <StyledOverviewCard>
       <StyledHeading>
-        <span>{title}</span><StyledIcon src={iconSrc} alt={iconAlt} />
+        <span>{title}</span>
+        <StyledIcon src={iconSrc} alt={iconAlt} />
       </StyledHeading>
       <StyledFollowers>
         <StyledFollowerQuantity>{followersQ}</StyledFollowerQuantity>

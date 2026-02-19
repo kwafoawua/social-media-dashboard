@@ -1,10 +1,10 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
-export const globalCss = theme => css`
+export const globalCss = (theme) => css`
   html {
     font-size: 10px;
   }
-  
+
   body {
     background-color: ${theme.bg.primary};
     color: ${theme.text.primary};
@@ -13,5 +13,3 @@ export const globalCss = theme => css`
     margin: auto;
   }
 `;
-
-

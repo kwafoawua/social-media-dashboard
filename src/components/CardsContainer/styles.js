@@ -8,33 +8,33 @@ const StyledCardsContainer = styled.div`
   width: 100%;
   position: relative;
   top: -5rem;
-  
-  @media(min-width: 1440px) {
+
+  @media (min-width: 1440px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-start;
     top: -10rem;
   }
 `;
 
 const StyledWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    
-    @media(min-width: 1440px) {
-      padding: 0 10rem;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    padding: 0 10rem;
+  }
 `;
 
 const StyledTitle = styled.h1`
   display: block;
   align-self: start;
   padding-left: 2rem;
-  color: ${props => props.theme.text.secondary};
-  
-  @media(min-width: 1440px) {
+  color: ${(props) => props.theme.text.secondary};
+
+  @media (min-width: 1440px) {
     padding-left: 12rem;
   }
 `;

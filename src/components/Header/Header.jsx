@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   DashboardInfo,
   Divider,
@@ -19,15 +18,15 @@ const Header = (props) => {
         <TotalFollowers>Total Followers: 23,004</TotalFollowers>
       </DashboardInfo>
       <Divider />
-        <ModeSwitcher>
-          Dark Mode
-          <Switch>
-            <Checkbox type="checkbox" onClick={props.onChange}/>
-              <Slider />
-          </Switch>
-        </ModeSwitcher>
+      <ModeSwitcher>
+        Dark Mode
+        <Switch>
+          <Checkbox type="checkbox" onClick={props.onChange} />
+          <Slider />
+        </Switch>
+      </ModeSwitcher>
     </HeaderContainer>
-  )
+  );
 };
 
 export default Header;
